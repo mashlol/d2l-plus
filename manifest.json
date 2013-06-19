@@ -1,0 +1,24 @@
+{
+    "name": "D2L Plus",
+    "version": "0.1",
+    "manifest_version": 2,
+
+    "description": "Adds features to D2L.",
+
+    "content_scripts": [{
+      "matches": ["https://learn.uwaterloo.ca/d2l/le/content/*"],
+      "css": ["style.css"],
+      "js": ["jquery.js", "script.js"]
+    }],
+
+    "background": {
+      "scripts": ["bg.js"],
+      "persistent": true
+    },
+
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "https://learn.uwaterloo.ca/d2l/le/content/*"
+    ]
+}
