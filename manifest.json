@@ -7,7 +7,6 @@
 
     "content_scripts": [{
       "matches": ["https://learn.uwaterloo.ca/d2l/le/content/*"],
-      "css": ["style.css"],
       "js": ["jquery.js", "script.js"]
     }],
 
